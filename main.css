@@ -1,0 +1,42 @@
+@media(min-width:992px){
+  .nav-wrapper black {
+
+  }
+
+  .icon {
+    height:10vh; 
+    width: auto;
+  }
+
+  #wrapper {
+    min-height: 100vh;
+    height: auto;
+    background: #424242;
+    display: inline-box;
+  }
+
+  .icons {
+    display: top;
+  }
+}
+
+@media(min-width:1500px){
+  .icon {
+    height:10vh; 
+    width: auto;
+  }
+
+  #wrapper {
+    min-height: 100vh;
+    height: auto;
+    background: #424242;
+    display: inline-box;
+  }
+
+  .icons {
+    display: top;
+  }
+}
+
+
+
