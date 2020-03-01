@@ -6,7 +6,6 @@ $(document).ready(function() {
     var counter = 0;
     window.addEventListener('userproximity', function(event) {
         if (event.near) {
-            document.getElementById('textarea1').value = 'NEEEEEEEEEEEAAAAAAARRRRRRR';
             if(counter % 2 == 0) {
                 // Floating Action Button
                 $('.fixed-action-btn').css("left", "23px");
