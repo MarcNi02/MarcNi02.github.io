@@ -53,8 +53,7 @@ $(document).ready(function(){
     });
 });
 
-
-$(function update() {
+function update() {
     $('#btn-delete-facebook').click(function() {
         $('#facebook-delete').remove();
         $('#btn-add-facebook').removeAttr("disabled");
@@ -133,6 +132,26 @@ $(function update() {
             update();
         }
     });
+
+    if ($('#facebook').length) {
+        $('#btn-add-facebook').attr("disabled", "disabled");
+    }
+    if ($('#google').length) {
+        $('#btn-add-google').attr("disabled", "disabled");
+    }
+    if ($('#kit').length) {
+        $('#btn-add-kit').attr("disabled", "disabled");
+    }
+    if ($('#twitter').length) {
+        $('#btn-add-twitter').attr("disabled", "disabled");
+    }
+    if ($('#netflix').length) {
+        $('#btn-add-netflix').attr("disabled", "disabled");
+    }
+    if ($('#youtube').length) {
+        $('#btn-add-youtube').attr("disabled", "disabled");
+    }
+
     var isDraggingFacebook = false;
     $("#facebook")
     .mousedown(function() {
@@ -343,7 +362,7 @@ $(function update() {
         containment: '#wrapper'
     });
     */
-});
+};
 
 function openInNewTab(url) {
     var win = window.open(url, '_blank');
