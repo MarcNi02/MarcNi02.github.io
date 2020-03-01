@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+..\\resources\\<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -10,31 +10,61 @@
   </head>
 
   <body>
-    <nav>
-      <div class="nav-wrapper black">
-        <a href="#" class="brand-logo center">My Overview</a>
-        <ul id="nav-mobile" class="left show-on-med-and-down">
-          <li><a href="index.html"><font size="5">Links</font></a></li>
-          <li><a href="index2.html"><font size="4">Todos</font></a></li>
+    <nav id="topbar">
+      <div class="nav-wrapper black" id="navtopbar">
+        <a href="#" class="brand-logo center"><span id="overview">My Overview</span></a>
+        <ul id="nav-mobile" class="right show-on-med-and-down">
+          <li><a href="index.html"><span id="links">Links</span></a></li>
+          <li><a href="index2.html"><span id="todos">Todos</span></a></li>
         </ul>
       </div>
-    </nav> 
+    </nav>
+
+    <div id="helper"><center>
+      <ul id="slide-out" class="sidenav grey darken-2" id="ulSidenav">
+        <li class="liSidenav"><div class="icon-add">
+          <img class="sidenav-item" src="facebook.png" alt="facebook">
+          <a id="btn-add-facebook" class="btn-floating teal darken-3"><i class="material-icons">add</i></a>
+        </div></li>
+        <li class="liSidenav"><div class="icon-add">
+          <img class="sidenav-item" src="google.png" alt="google">
+          <a id="btn-add-google" class="btn-floating teal darken-3"><i class="material-icons">add</i></a>
+        </div></li>
+        <li class="liSidenav"><div class="icon-add">
+          <img class="sidenav-item" src="kit.png" alt="kit">
+          <a id="btn-add-kit" class="btn-floating teal darken-3"><i class="material-icons">add</i></a>
+        </div></li>
+        <li class="liSidenav"><div class="icon-add">
+          <img class="sidenav-item" src="netflix.png" alt="netflix">
+          <a id="btn-add-netflix" class="btn-floating teal darken-3"><i class="material-icons">add</i></a>
+        </div></li>
+        <li class="liSidenav"><div class="icon-add">
+          <img class="sidenav-item" src="twitter.png" alt="twitter">
+          <a id="btn-add-twitter" class="btn-floating teal darken-3"><i class="material-icons">add</i></a>
+        </div></li>
+        <li class="liSidenav"><div class="icon-add">
+          <img class="sidenav-item" src="youtube.png" alt="youtube">
+          <a id="btn-add-youtube" class="btn-floating teal darken-3"><i class="material-icons">add</i></a>
+        </div></li>
+      </ul></center>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a href="#" data-target="slide-out" class="sidenav-trigger btn-large bright grey darken-4">
+        <i class="material-icons">add</i>
+      </a>
+    </div>
 
 
     <div id="wrapper">
-      <div class="icons"><img class="icon" id = "facebook" src="facebook.png" alt="facebook"></div>
-      <div class="icons"><img class="icon" id = "google" src="google.png" alt="google"></div>
-      <div class="icons"><img class="icon" id = "kit" src="kit.png" alt="kit"></div>
-      <div class="icons"><img class="icon" id = "netflix" src="netflix.png" alt="netflix"></div>
-      <div class="icons"><img class="icon" id = "twitter" src="twitter.png" alt="twitter"></div>
-      <div class="icons"><img class="icon" id = "youtube" src="youtube.png" alt="youtube"></div>
+      <!--<div class="icons"><img class="icon" id = "facebook" src="facebook.png" alt="facebook"></div>-->
+      <!--<div class="icons"><img class="icon" id = "google" src="google.png" alt="google"></div>-->
+      <!--<div class="icons"><img class="icon" id = "kit" src="kit.png" alt="kit"></div>-->
+      <!--<div class="icons"><img class="icon" id = "netflix" src="netflix.png" alt="netflix"></div>-->
+      <!--<div class="icons"><img class="icon" id = "twitter" src="twitter.png" alt="twitter"></div>-->
+      <!--<div class="icons"><img class="icon" id = "youtube" src="youtube.png" alt="youtube"></div>-->
     </div>   
-    
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large bright grey darken-4">
-        <i class="large material-icons">add</i>
-      </a>
-    </div>  
+  
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>

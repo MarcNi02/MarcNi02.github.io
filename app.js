@@ -1,8 +1,89 @@
-$( document ).ready(function() {
-    
+$(document).ready(function(){
+    $('.sidenav').sidenav({
+        edge:'right'
+    });
 });
 
-$(function() {
+
+$(function update() {
+    $('#btn-delete-facebook').click(function() {
+        $('#facebook-delete').remove();
+        $('#btn-add-facebook').removeAttr("disabled");
+        update();
+    });
+    $('#btn-delete-google').click(function() {
+        $('#google-delete').remove();
+        $('#btn-add-google').removeAttr("disabled");
+        update();
+    });
+    $('#btn-delete-kit').click(function() {
+        $('#kit-delete').remove();
+        $('#btn-add-kit').removeAttr("disabled");
+        update();
+    });
+    $('#btn-delete-netflix').click(function() {
+        $('#netflix-delete').remove();
+        $('#btn-add-netflix').removeAttr("disabled");
+        update();
+    });
+    $('#btn-delete-twitter').click(function() {
+        $('#twitter-delete').remove();
+        $('#btn-add-twitter').removeAttr("disabled");
+        update();
+    });
+    $('#btn-delete-youtube').click(function() {
+        $('#youtube-delete').remove();
+        $('#btn-add-youtube').removeAttr("disabled");
+        update();
+    });
+    $('#btn-add-facebook').click(function() {
+        if ($('#btn-add-facebook').attr("disabled") == "disabled") {
+        } else {
+            $('#wrapper').append('<div class="icon-delete" id="facebook-delete"><img class="icon" id="facebook" src="facebook.png" alt="facebook"><a id="btn-delete-facebook" class="btn-floating red"><i class="material-icons">delete</i></a></div>');
+            $('#btn-add-facebook').attr("disabled", "disabled");
+            update();
+        }
+    });
+    $('#btn-add-google').click(function() {
+        if ($('#btn-add-google').attr("disabled") == "disabled") {
+        } else {
+            $('#wrapper').append('<div class="icon-delete" id="google-delete"><img class="icon" id="google" src="google.png" alt="google"><a id="btn-delete-google" class="btn-floating red"><i class="material-icons">delete</i></a></div>');
+            $('#btn-add-google').attr("disabled", "disabled");
+            update();
+        }
+    });
+    $('#btn-add-kit').click(function() {
+        if ($('#btn-add-kit').attr("disabled") == "disabled") {
+        } else {
+            $('#wrapper').append('<div class="icon-delete" id="kit-delete"><img class="icon" id="kit" src="kit.png" alt="kit"><a id="btn-delete-kit" class="btn-floating red"><i class="material-icons">delete</i></a></div>');
+            $('#btn-add-kit').attr("disabled", "disabled");
+            update();
+        }
+    });
+    $('#btn-add-netflix').click(function() {
+        if ($('#btn-add-netflix').attr("disabled") == "disabled") {
+        } else {
+            $('#wrapper').append('<div class="icon-delete" id="netflix-delete"><img class="icon" id="netflix" src="netflix.png" alt="netflix"><a id="btn-delete-netflix" class="btn-floating red"><i class="material-icons">delete</i></a></div>');
+            $('#btn-add-netflix').attr("disabled", "disabled");
+            update();
+        }
+    });
+    $('#btn-add-twitter').click(function() {
+        if ($('#btn-add-twitter').attr("disabled") == "disabled") {
+        } else {
+            $('#wrapper').append('<div class="icon-delete" id="twitter-delete"><img class="icon" id="twitter" src="twitter.png" alt="twitter"><a id="btn-delete-twitter" class="btn-floating red"><i class="material-icons">delete</i></a></div>');
+            $('#btn-add-twitter').attr("disabled", "disabled");
+            update();
+        }
+    });
+    $('#btn-add-youtube').click(function() {
+        if ($('#btn-add-youtube').attr("disabled") == "disabled") {
+        } else {
+            $('#wrapper').append('<div class="icon-delete" id="youtube-delete"><img class="icon" id="youtube" src="youtube.png" alt="youtube"><a id="btn-delete-youtube" class="btn-floating red"><i class="material-icons">delete</i></a></div>');
+            $('#btn-add-youtube').attr("disabled", "disabled");
+            update();
+        }
+    });
     var isDraggingFacebook = false;
     $("#facebook")
     .mousedown(function() {
@@ -94,10 +175,13 @@ $(function() {
         }
     });
 
+    /*
    $(".icon").draggable({
        containment: '#wrapper',
    });
-   $("#facebook").draggable({
+   */
+    $("#facebook-delete").draggable({
+        containment: '#wrapper',
         stop: function(event, ui) { 
             var left = ui.offset.left;
             var top = ui.offset.top;
@@ -111,11 +195,12 @@ $(function() {
 
             console.log('left' + left);
             console.log('top' + top);
-            $("#facebook").offset({left:left,top:top});
-            console.log($("#facebook").position());
+            $("#facebook-delete").offset({left:left,top:top});
+            console.log($("#facebook-delete").position());
             }
-    });
-    $("#google").draggable({
+    }).css({position: 'absolute'});
+    $("#google-delete").draggable({
+        containment: '#wrapper',
         stop: function(event, ui) { 
             var left = ui.offset.left;
             var top = ui.offset.top;
@@ -128,11 +213,12 @@ $(function() {
 
             console.log('left' + left);
             console.log('top' + top);
-            $("#google").offset({left:left,top:top});
-            console.log($("#google").position());
+            $("#google-delete").offset({left:left,top:top});
+            console.log($("#google-delete").position());
             }
-    });
-    $("#kit").draggable({
+    }).css({position: 'absolute'});
+    $("#kit-delete").draggable({
+        containment: '#wrapper',
         stop: function(event, ui) { 
             var left = ui.offset.left;
             var top = ui.offset.top;
@@ -145,11 +231,12 @@ $(function() {
 
             console.log('left' + left);
             console.log('top' + top);
-            $("#kit").offset({left:left,top:top});
-            console.log($("#kit").position());
+            $("#kit-delete").offset({left:left,top:top});
+            console.log($("#kit-delete").position());
             }
-    });
-    $("#netflix").draggable({
+    }).css({position: 'absolute'});
+    $("#netflix-delete").draggable({
+        containment: '#wrapper',
         stop: function(event, ui) { 
             var left = ui.offset.left;
             var top = ui.offset.top;
@@ -162,11 +249,12 @@ $(function() {
 
             console.log('left' + left);
             console.log('top' + top);
-            $("#netflix").offset({left:left,top:top});
-            console.log($("#netflix").position());
+            $("#netflix-delete").offset({left:left,top:top});
+            console.log($("#netflix-delete").position());
             }
-    });
-    $("#twitter").draggable({
+    }).css({position: 'absolute'});
+    $("#twitter-delete").draggable({
+        containment: '#wrapper',
         stop: function(event, ui) { 
             var left = ui.offset.left;
             var top = ui.offset.top;
@@ -179,11 +267,12 @@ $(function() {
 
             console.log('left' + left);
             console.log('top' + top);
-            $("#twitter").offset({left:left,top:top});
-            console.log($("#twitter").position());
+            $("#twitter-delete").offset({left:left,top:top});
+            console.log($("#twitter-delete").position());
             }
-    });
-    $("#youtube").draggable({
+    }).css({position: 'absolute'});
+    $("#youtube-delete").draggable({
+        containment: '#wrapper',
         stop: function(event, ui) { 
             var left = ui.offset.left;
             var top = ui.offset.top;
@@ -196,17 +285,15 @@ $(function() {
 
             console.log('left' + left);
             console.log('top' + top);
-            $("#youtube").offset({left:left,top:top});
-            console.log($("#youtube").position());
+            $("#youtube-delete").offset({left:left,top:top});
+            console.log($("#youtube-delete").position());
             }
-    });
+    }).css({position: 'absolute'});
+    /*
     $(".icon").droppable({
         containment: '#wrapper'
     });
-});
-
-$(function(){
-    $('.fixed-action-btn').click( );
+    */
 });
 
 function openInNewTab(url) {

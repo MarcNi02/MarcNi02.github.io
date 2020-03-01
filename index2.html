@@ -10,33 +10,39 @@
   </head>
 
   <body>
-    <nav>
-      <div class="nav-wrapper black">
-        <a href="#" class="brand-logo center">My Overview</a>
-        <ul id="nav-mobile" class="left show-on-med-and-down">
-          <li><a href="index.html"><font size="4">Links</font></a></li>
-          <li><a href="index2.html"><font size="5">Todos</font></a></li>
+    <nav id="topbar">
+      <div class="nav-wrapper black" id="navtopbar">
+        <a href="#" class="brand-logo center"><span id="overview">My Overview</span></a>
+        <ul id="nav-mobile" class="right show-on-med-and-down">
+          <li><a href="index.html"><span id="links">Links</span></a></li>
+          <li><a href="index2.html"><span id="todos">Todos</span></a></li>
         </ul>
       </div>
     </nav>
 
-    
-    <div class="row">
-        <form class="col s12">
+    <div id = wrapper>
+      <div class="row" id="inner">
+        <div id="left">
+          <label>
+            <input type="checkbox" />
+            <span>Done</span>
+          </label>
+        </div>
+        <form class="col s12" id="right">
           <div class="row">
-            <div class="input-field col s12">
+            <div class="input-field col s12" contenteditable="true">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Textarea</label>
+              <label for="textarea1">Todo</label>
             </div>
           </div>
         </form>
+      </div>
     </div>
 
-
-    <div class="fixed-action-btn">
-        <a class="btn-floating btn-large grey darken-4">
-          <i class="large material-icons">add</i>
-        </a>
+    <div class="fixed-action-btn" id="wtf">
+      <a class="sidenav-trigger btn-large bright grey darken-4">
+        <i class="material-icons">add</i>
+      </a>
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

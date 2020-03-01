@@ -1,11 +1,116 @@
-@media(min-width:992px){
-  .nav-wrapper black {
+html { 
+  overflow-y: hidden; 
+}
 
+#wrapper {
+  min-height: 100vh;
+  height: auto;
+  background: #424242;
+  display: inline-box;
+}
+
+.icons {
+  display: top;
+}
+
+.btn-floating {
+  position: relative;
+  bottom: 20px;
+  right: 30px;
+}
+
+.icon-delete {
+  display: table-cell;
+  position: abosolute;
+}
+
+
+@media(min-width:400px) and (max-width: 999px){
+  #topbar{
+    height: 7vh !important;
+  }
+  
+  #navtopbar {
+    padding-top: 2% !important;
+}
+
+  span#overview {
+      font-size: 70px !important;
+  }
+  span#links {
+      font-size: 50px !important;
+  }
+  span#todos {
+      font-size: 35px !important;
+  }
+
+  #nav-mobile {
+      padding-top: 10px !important;
+  }
+
+  .sidenav-item {
+    height: 7vh; 
+    width: auto;
+  }
+
+
+  html {
+    font-size: xx-large !important;
+  }
+
+
+  li {
+    height: 15.5vh;
+    align-items: center;
+  }
+
+  .icon {
+    height: 7vh; 
+    width: auto;
+    z-index: 0 !important ;
+  }
+
+  .btn-large {
+    height: 150px !important;
+  }
+  .btn-large i {
+      padding-top: 45px !important;
+      font-size: 4rem !important;
+  }
+}
+
+@media(min-width:1000px){
+
+  .sidenav-item {
+    height:10vh; 
+    width: auto;
+    top: 50%;
+  }
+
+  span#links {
+    font-size: 28px !important;
+  }
+  span#todos {
+      font-size: 20px !important;
   }
 
   .icon {
     height:10vh; 
     width: auto;
+    z-index: 0 !important ;
+  }
+
+  html {
+    font-size: large !important;
+  }
+
+  ul {
+    height: 100%;
+  }
+  
+  li {
+    height: 16.6vh;
+    align-items: center;
   }
 
   #wrapper {
@@ -15,28 +120,13 @@
     display: inline-box;
   }
 
-  .icons {
-    display: top;
+  .btn-floating.btn-large {
+    width: 56px !important;
+    height: 56px !important;
+    padding: 0;
+  }
+
+  .btn-floating.btn-large i {
+    line-height: 56px !important;
   }
 }
-
-@media(min-width:1500px){
-  .icon {
-    height:10vh; 
-    width: auto;
-  }
-
-  #wrapper {
-    min-height: 100vh;
-    height: auto;
-    background: #424242;
-    display: inline-box;
-  }
-
-  .icons {
-    display: top;
-  }
-}
-
-
-
