@@ -1,9 +1,13 @@
 $(document).ready(function(){
-    $('.sidenav').sidenav({
-        edge:'left'
-    });
+    
 
     var counter = 0;
+
+    if (counter == 0) {
+        $('.sidenav').sidenav({
+            edge:'left'
+        }); 
+    }
     window.addEventListener('userproximity', function(event) {
         if (event.near) {
             if(counter % 2 == 0) {
