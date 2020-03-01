@@ -1,6 +1,8 @@
 $(document).ready(function(){
     
-    $('.sidenav').sidenav(); 
+    $('.sidenav').sidenav({
+        edge:'left'
+    }); 
 
     var counter = 0;
     window.addEventListener('userproximity', function(event) {
