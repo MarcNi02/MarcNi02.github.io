@@ -89,8 +89,8 @@ html {
     }
 
     #filler {
-        background: #424242;
-        background-color: #424242;
+        background: black;
+        background-color: black;
         height: 50px;
     }
 }
