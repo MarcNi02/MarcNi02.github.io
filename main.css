@@ -25,6 +25,7 @@ html {
 }
 
 
+
 @media(min-width:400px) and (max-width: 999px){
   #topbar{
     height: 7vh !important;
@@ -94,6 +95,14 @@ html {
     padding: 2px;
     border-radius: 20px;
   }
+
+  #ulSidenav {
+    padding-top: 20px
+  }
+
+  #filler {
+    height: 7vh !important;
+  }
 }
 
 @media(min-width:1000px){
@@ -126,7 +135,7 @@ html {
   }
   
   li {
-    height: 16.6vh;
+    height: 15vh;
     align-items: center;
   }
 
@@ -145,5 +154,9 @@ html {
 
   .btn-floating.btn-large i {
     line-height: 56px !important;
+  }
+
+  #filler {
+    height: 5vh !important;
   }
 }
