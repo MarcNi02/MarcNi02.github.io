@@ -2,6 +2,14 @@ $(document).ready(function() {
     M.updateTextFields();
 
     $('.fixed-action-btn').floatingActionButton();
+
+    window.addEventListener('userproximity', function(event) {
+        if (event.near) {
+            document.getElementById('myTextarea').value = 'NEEEEEEEEEEEAAAAAAARRRRRRR';
+        } else {
+            document.getElementById('myTextarea').value = 'NOOOOOOOOOOT NEEEEEEEAAAAAARR';
+        }
+    });
 });
 
 $('textarea').click(function () {
