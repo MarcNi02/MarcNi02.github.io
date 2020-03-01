@@ -21,6 +21,7 @@ html, body {
     background: #424242;
 }
 
+
 .row {
     background-color: #414a4c;
 }
@@ -86,6 +87,12 @@ html {
     #textarea1 {
         font-size: 40px;
     }
+
+    #filler {
+        background: #424242;
+        background-color: #424242;
+        height: 50px;
+    }
 }
 
 @media(min-width:1000px){
@@ -101,5 +108,9 @@ html {
     }
     span#todos {
         font-size: 40px !important;
+    }
+
+    #filler {
+        visibility: hidden;
     }
 }
