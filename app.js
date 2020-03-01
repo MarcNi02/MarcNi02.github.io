@@ -1,14 +1,8 @@
 $(document).ready(function(){
 
-    if (counter % 2 == 0) {
-        $('.sidenav').sidenav({
-            edge:'left'
-        }); 
-    } else {
-        $('.sidenav').sidenav({
-            edge:'left'
-        }); 
-    }
+    $('.sidenav').sidenav({
+        edge:'left'
+    }); 
 
     var counter = 0;
     window.addEventListener('userproximity', function(event) {
@@ -25,6 +19,12 @@ $(document).ready(function(){
                 $('#navtopbar').append('<a href="#" class="brand-logo right"><span id="overview">My Overview &emsp;</span></a><ul id="nav-mobile" class="left show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>');
             
                 //SideBar
+                $('#slide-out').remove();
+
+                $('#helper').append('<ul id="slide-out" class="sidenav grey darken-2" id="ulSidenav"><li id="filler"></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="facebook.png" alt="facebook"><a id="btn-add-facebook" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="google.png" alt="google"><a id="btn-add-google" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="kit.png" alt="kit"><a id="btn-add-kit" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="netflix.png" alt="netflix"><a id="btn-add-netflix" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="twitter.png" alt="twitter"><a id="btn-add-twitter" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="youtube.png" alt="youtube"><a id="btn-add-youtube" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li></ul>');
+                $('.sidenav').sidenav({
+                    edge:'right'
+                }); 
             } else {
                 // Floating Action Button
                 $('.fixed-action-btn').css("right", "23px");
@@ -37,6 +37,12 @@ $(document).ready(function(){
                 $('#navtopbar').append('<a href="#" class="brand-logo left"><span id="overview">&emsp;My Overview</span></a><ul id="nav-mobile" class="right show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>')
                 
                 //SideBar
+                $('#slide-out').remove();
+
+                $('#helper').append('<ul id="slide-out" class="sidenav grey darken-2" id="ulSidenav"><li id="filler"></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="facebook.png" alt="facebook"><a id="btn-add-facebook" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="google.png" alt="google"><a id="btn-add-google" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="kit.png" alt="kit"><a id="btn-add-kit" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="netflix.png" alt="netflix"><a id="btn-add-netflix" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="twitter.png" alt="twitter"><a id="btn-add-twitter" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li><li class="liSidenav"><div class="icon-add"><img class="sidenav-item" src="youtube.png" alt="youtube"><a id="btn-add-youtube" class="btn-floating teal darken-3"><i class="material-icons">add</i></a></div></li></ul>');
+                $('.sidenav').sidenav({
+                    edge:'left'
+                }); 
             }
             counter++;
         }
