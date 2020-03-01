@@ -32,7 +32,16 @@ html, body {
 
 html {
     font-size: large !important;
-  }
+}
+
+.fixed-action-btn {
+    position: fixed;
+    right: 23px;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+}
 
 
 /* label color */
@@ -93,6 +102,48 @@ html {
         background-color: black;
         height: 50px;
     }
+
+    .topbar-links {
+        background-color: #3a3a3a;
+        border: 2px solid #A0A0A0;
+        padding: 5px;
+        border-radius: 25px;
+    }
+
+    span#done {
+        font-size: 30px !important;
+        height: 60px !important;
+    }
+
+    #label {
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    input[type="checkbox"] {
+        /* Double-sized Checkboxes */
+        -webkit-appearance: none !important;
+        box-sizing: border-box !important;
+        -ms-transform: scale(2); /* IE */
+        -moz-transform: scale(2); /* FF */
+        -webkit-transform: scale(2); /* Safari and Chrome */
+        -o-transform: scale(2); /* Opera */
+        transform: scale(2) !important;
+        padding: 10px;
+    }
+
+    input[type=checkbox] {
+        /* Double-sized Checkboxes */
+        -webkit-appearance: none !important;
+        box-sizing: border-box !important;
+        -ms-transform: scale(2); /* IE */
+        -moz-transform: scale(2); /* FF */
+        -webkit-transform: scale(2); /* Safari and Chrome */
+        -o-transform: scale(2); /* Opera */
+        transform: scale(2) !important;
+        padding: 10px;
+    }
+
 }
 
 @media(min-width:1000px){
