@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 #left {
     top: 50%;
@@ -91,6 +96,8 @@ html {
 
     span#links {
         font-size: 20px !important;
+        display: block;
+        border: slategray;
     }
     span#todos {
         font-size: 28px !important;

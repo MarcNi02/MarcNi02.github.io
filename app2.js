@@ -1,6 +1,10 @@
 $(document).ready(function() {
     M.updateTextFields();
 
+    $('textarea').click(function () {
+        $(this).css('resize', 'none');
+    });
+
     $('.fixed-action-btn').floatingActionButton();
 });
 
