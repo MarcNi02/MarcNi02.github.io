@@ -19,7 +19,7 @@ $(document).ready(function(){
                 $('#navtopbar').append('<a href="#" class="brand-logo right"><span id="overview">My Overview &emsp;</span></a><ul id="nav-mobile" class="left show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>');
             
                 //SideBar
-                $('.Sidenav').sidenav({
+                $('.sidenav').sidenav({
                     edge:'right'
                 });
             } else {
