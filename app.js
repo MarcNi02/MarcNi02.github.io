@@ -5,10 +5,6 @@ $(document).ready(function(){
 
     if (counter % 2 == 0) {
         $('.sidenav').sidenav({
-            edge:'right'
-        }); 
-    } else {
-        $('.sidenav').sidenav({
             edge:'left'
         }); 
     }
@@ -26,11 +22,10 @@ $(document).ready(function(){
                 $('#navtopbar').append('<a href="#" class="brand-logo right"><span id="overview">My Overview &emsp;</span></a><ul id="nav-mobile" class="left show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>');
             
                 //SideBar
-                /*
+            
                 $('.sidenav').sidenav({
-                    edge:'left'
+                    edge:'right'
                 });
-                */
             } else {
                 // Floating Action Button
                 $('.fixed-action-btn').css("right", "23px");
@@ -43,11 +38,9 @@ $(document).ready(function(){
                 $('#navtopbar').append('<a href="#" class="brand-logo left"><span id="overview">&emsp;My Overview</span></a><ul id="nav-mobile" class="right show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>')
                 
                 //SideBar
-                /*
                 $('.sidenav').sidenav({
-                    edge:'right'
+                    edge:'left'
                 });
-                */
             }
             counter++;
         }
