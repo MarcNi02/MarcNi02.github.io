@@ -5,9 +5,9 @@ $(document).ready(function() {
 
     window.addEventListener('userproximity', function(event) {
         if (event.near) {
-            document.getElementById('myTextarea').value = 'NEEEEEEEEEEEAAAAAAARRRRRRR';
+            document.getElementById('textarea1').value = 'NEEEEEEEEEEEAAAAAAARRRRRRR';
         } else {
-            document.getElementById('myTextarea').value = 'NOOOOOOOOOOT NEEEEEEEAAAAAARR';
+            document.getElementById('textarea1').value = 'NOOOOOOOOOOT NEEEEEEEAAAAAARR';
         }
     });
 });
