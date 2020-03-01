@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     if (counter == 0) {
         $('.sidenav').sidenav({
-            edge:'left'
+            edge:'right'
         }); 
     }
     window.addEventListener('userproximity', function(event) {
