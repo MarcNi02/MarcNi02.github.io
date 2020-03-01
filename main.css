@@ -83,9 +83,9 @@ html {
     width: 70px !important;
   }
 
-  .btn-floating {
-    font-size: 3rem !important;
-    padding-bottom: 10px !important;
+  .btn-floating i {
+    font-size: 2rem !important;
+    padding-top: 10px !important;
   }
 }
 
