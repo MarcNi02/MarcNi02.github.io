@@ -1,10 +1,11 @@
 $(document).ready(function(){
     
+    $('.sidenav').sidenav(); 
 
     var counter = 0;
 
     if (counter % 2 == 0) {
-        $('.sidenav').sidenav({
+        $('#ulSidenav').sidenav({
             edge:'left'
         }); 
     }
@@ -22,8 +23,7 @@ $(document).ready(function(){
                 $('#navtopbar').append('<a href="#" class="brand-logo right"><span id="overview">My Overview &emsp;</span></a><ul id="nav-mobile" class="left show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>');
             
                 //SideBar
-            
-                $('.sidenav').sidenav({
+                $('#ulSidenav').sidenav({
                     edge:'right'
                 });
             } else {
@@ -38,7 +38,7 @@ $(document).ready(function(){
                 $('#navtopbar').append('<a href="#" class="brand-logo left"><span id="overview">&emsp;My Overview</span></a><ul id="nav-mobile" class="right show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>')
                 
                 //SideBar
-                $('.sidenav').sidenav({
+                $('#ulSidenav').sidenav({
                     edge:'left'
                 });
             }
