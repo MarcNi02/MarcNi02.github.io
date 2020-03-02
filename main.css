@@ -28,7 +28,7 @@ html {
 
 @media(min-width:400px) and (max-width: 999px){
   #topbar{
-    height: 7vh !important;
+    height: 122px !important;
   }
   
   #navtopbar {
