@@ -5,8 +5,9 @@ $(document).ready(function(){
 
     if(counter == 0) {
         $('.sidenav').sidenav({
-            edge:'left'
+            edge:'right'
         }); 
+        update();
     }
     window.addEventListener('userproximity', function(event) {
         if (event.near) {
@@ -52,6 +53,7 @@ $(document).ready(function(){
         }
     });
 });
+
 
 function update() {
     $('#btn-delete-facebook').click(function() {
