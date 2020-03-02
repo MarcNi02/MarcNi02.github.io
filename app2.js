@@ -15,7 +15,7 @@ $(document).ready(function() {
                 $('.brand-logo').remove();
                 $('#nav-mobile').remove();
 
-                $('#navtopbar').append('<a href="#" class="brand-logo right"><span id="overview">My Overview &emsp;</span></a><ul id="nav-mobile" class="left show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>');
+                $('#navtopbar').append('<a href="#" class="brand-logo right"><span id="overview">My Overview &emsp;</span></a><ul id="nav-mobile" class="left show-on-med-and-down"><li><a href="index.html" class="waves-effect waves-light btn" style="opacity: 0.9;">Links</a></li><li><a href="index2.html" class="waves-effect waves-light btn">Todos</a></li></ul>');
             } else {
                 // Floating Action Button
                 $('.fixed-action-btn').css("right", "23px");
@@ -25,7 +25,7 @@ $(document).ready(function() {
                 $('.brand-logo').remove();
                 $('#nav-mobile').remove();
 
-                $('#navtopbar').append('<a href="#" class="brand-logo left"><span id="overview">&emsp;My Overview</span></a><ul id="nav-mobile" class="right show-on-med-and-down"><li><a href="index.html"><div class="topbar-links"><span id="links">Links</span></div></a></li><li><a href="index2.html"><div class="topbar-links"><span id="todos">Todos</span></div></a></li></ul>')
+                $('#navtopbar').append('<a href="#" class="brand-logo left"><span id="overview">&emsp;My Overview</span></a><ul id="nav-mobile" class="right show-on-med-and-down"><li><a href="index.html" class="waves-effect waves-light btn" style="opacity: 0.9;">Links</a></li><li><a href="index2.html" class="waves-effect waves-light btn">Todos</a></li></ul>')
             }
             counter++;
         }

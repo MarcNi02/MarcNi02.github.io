@@ -67,6 +67,10 @@ html {
         font-size: xx-large !important;
     }
 
+    .nav-wrapper {
+        transform: scaleY(1.1);
+    }
+
     #navtopbar {
         padding-top: 2% !important;
     }
@@ -84,6 +88,13 @@ html {
 
     #nav-mobile {
         padding-top: 10px !important;
+    }
+
+    .btn {
+        background-color: #26a69a !important;
+        transform: scale(2) !important;
+        margin-left: 50px !important;
+        margin-right: 40px !important;
     }
 
     .btn-large {
@@ -110,15 +121,16 @@ html {
     }
 
     #label {
-        height: 100px !important;
-        width: 100px !important;
+        transform: scale(3) !important;
     }
 
     .topbar-links {
+        height: 75;
+        width: auto;
         background-color: #3a3a3a;
-        border: 2px solid #A0A0A0;
+        border: 20px;
+        border-color: #ffffff;
         padding: 2px;
-        border-radius: 20px;
     }
 }
 

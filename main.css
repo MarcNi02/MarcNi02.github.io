@@ -54,6 +54,17 @@ html {
     width: auto;
   }
 
+  .nav-wrapper {
+    transform: scaleY(1.1);
+}
+  
+  .btn {
+    background-color: #26a69a !important;
+    transform: scale(2) !important;
+    margin-left: 50px !important;
+    margin-right: 40px !important;
+}
+
 
   html {
     font-size: xx-large !important;
